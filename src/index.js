@@ -4,10 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Define the base URL for backend APIs
+const BASE_URL = 'http://127.0.0.1:5000'; // Replace with your backend URL
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App baseUrl={BASE_URL} /> {/* Pass the base URL as a prop */}
   </React.StrictMode>
 );
 
