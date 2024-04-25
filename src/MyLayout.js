@@ -16,7 +16,7 @@ const MyLayout = ({baseUrl}) => {
     const age = prompt("Enter age:");
     if (name && age) {
       console.log("Adding data:", { name: name, age: parseInt(age) });
-      const response = await fetch(`http://127.0.0.1:5000/api/add`, {
+      const response = await fetch(`https://backend-jbjb.onrender.com/api/add`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -49,7 +49,7 @@ const MyLayout = ({baseUrl}) => {
     const name = prompt("Enter name:", componentData.find((c) => c.key === componentKey)?.content);
     const age = prompt("Enter age:");
     if (name && age) {
-      const response = await fetch(`http://127.0.0.1:5000/api/add`, {
+      const response = await fetch(`https://backend-jbjb.onrender.com/api/add`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
