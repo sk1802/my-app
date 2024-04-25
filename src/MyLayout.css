@@ -1,0 +1,16 @@
+/* src/MyLayout.css */
+
+.layout {
+    border: 2px solid #ccc; /* Border for the layout container */
+  }
+  
+  .component {
+    border: 2px solid #f00; /* Border for the components */
+    background-color: #fff; /* Background color for the components */
+    /* padding: 10px; Padding for the components */
+  }
+  
+  .resizable-component {
+    border: 1px solid #000; /* Add border style */
+  }
+  
